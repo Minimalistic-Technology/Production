@@ -18,12 +18,7 @@ require('dotenv').config();
 // cors => cross origin resource sharing
 app.use(
   cors({
-    // make sure you don't have / in last
-    // Do "http://localhost:3000"
-    // Don't "http://localhost:3000/"
-//     origin: ["https://minimalistictechnology.com", "https://www.minimalistictechnology.com","http://minimalistictechnology.com","http://www.minimalistictechnology.com",
-// "https://minimalisticlearning.com","http://minimalisticlearning.com","https://www.minimalisticlearning.com","http://www.minimalisticlearning.com", 
-//             "https://books-store-inky-one.vercel.app", "https://siddhi-e-state.vercel.app"],
+    origin: ["https://minimalistictechnology.com"],
     credentials: true,
   })
 );
