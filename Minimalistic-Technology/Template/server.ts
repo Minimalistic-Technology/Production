@@ -2,7 +2,7 @@ import { v2 as cloudinary } from "cloudinary";
 import http from "http";
 import connectDB from "./utils/db";
 // import { initSocketServer } from "./socketServer";
-import  app  from "./app";
+import { app } from "./app";
 
 require("dotenv").config();
 
@@ -37,6 +37,6 @@ if (false && cluster.isMaster) {
   // create server
   server.listen(process.env.PORT, () => {
     console.log(`Server is connected with port ${process.env.PORT}`);
-    // connectDB();
+    connectDB();
   });
 }
