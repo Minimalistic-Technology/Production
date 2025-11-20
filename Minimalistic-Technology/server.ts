@@ -1,6 +1,6 @@
 import { v2 as cloudinary } from "cloudinary";
 import http from "http";
-// import connectDB from "./utils/db";
+import connectDB from "./utils/db";
 // import { initSocketServer } from "./socketServer";
 import  app  from "./app";
 
