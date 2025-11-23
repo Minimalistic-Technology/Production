@@ -18,7 +18,7 @@ require('dotenv').config();
 // cors => cross origin resource sharing
 app.use(
   cors({
-    origin: ["http://api.minimalistictechnology.com:5000"],
+    origin: ["https://minimalistictechnology.com"],
     credentials: true,
   })
 );
